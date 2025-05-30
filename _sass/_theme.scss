@@ -147,18 +147,34 @@ body {
 
 .aside {
   @include breakpoint(break-1) {
-    max-width: 34%;
-    margin-left: 4%;
+    max-width: 20%;
+    margin-left: 3%;
     @include flex(1, 0, auto);
     opacity: 0.5;
     transition: opacity .1s;
+    h2, h3, .aside-title {
+      font-size: 1.1rem;
+    }
+    p, li, .aside-text {
+      font-size: 0.9rem;
+    }
+    p {
+      font-size: 0.95rem;
+      color: #444;
+      line-height: 1;
+      margin-top: 0.1em;
+      margin-bottom: 0.1em;
+    }
+    .nav-social, .social-links {
+      margin-top: 2em;
+    }
     .section {
       position: sticky;
       top: 0;
     }
     &--left {
       margin-left: 0;
-      margin-right: 4%;
+      margin-right: 2%;
       order: -1;
     }
     &:hover {
@@ -166,6 +182,7 @@ body {
     }
   }
 }
+
 
 .section {
   margin: 0;
@@ -454,4 +471,8 @@ pre code {
     white-space: pre;
     overflow-x: scroll;
   }
+}
+
+.site-footer, .footer {
+  font-size: 0.8rem;
 }

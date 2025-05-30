@@ -1,93 +1,75 @@
 ---
-title: About Alembic
+title: About Me
 feature_text: |
-  ## Alembic
-  A Jekyll boilerplate theme designed to be a starting point for any Jekyll website
+  ## Teddy (Y.-H., Huang)
+    Graduate Student
+    <br>
+    National Chung Hsing University (NCHU), Taiwan
 feature_image: "https://picsum.photos/1300/400?image=989"
-excerpt: "Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately. Install it, configure it, tweak it, push it."
+excerpt: ""
+aside: true
 ---
 
-Alembic is a starting point for [Jekyll](https://jekyllrb.com/) projects. Rather than starting from scratch, this boilerplate is designed to get rolling immediately. Install it, configure it, tweak it, push it.
+- Specialized in SNP-based population genetics analysis, GWAS, and interactive visualization.
+- **Developer of [_ShiNyP_](https://teddyenn.github.io/ShiNyP-guide)** — an R/Shiny platform for SNP analysis and visualization with AI-assisted features.
+- Research experience at Texas A&M University; presentations at PAG 32 and the 2024 ASA, CSSA & SSSA meeting.
+- Currently learning and exploring multi-omics data integration and systems biology.
 
-{% include button.html text="Fork it" icon="github" link="https://github.com/daviddarnes/alembic" color="#0366d6" %} {% include button.html text="Buy me a coffee ☕️" link="https://buymeacoffee.com/daviddarnes#support" color="#f68140" %} {% include button.html text="Tweet it" icon="twitter" link="https://twitter.com/intent/tweet/?url=https://alembic.darn.es&text=Alembic%20-%20A%20Jekyll%20boilerplate%20theme&via=DavidDarnes" color="#0d94e7" %} {% include button.html text="Install Alembic ⚗️" link="https://github.com/daviddarnes/alembic#installation" %}
+Download My CV: 
+<br>
+Download My Resume: 
 
-## Features
+---
 
-- Available as a **theme gem** and **GitHub Pages** theme
-- Clear and elegant design that can be used out of the box or as solid starting point
-- Tested in all major browsers, including **IE and Edge**
-- Built in **Service Worker** so it can work offline and on slow connections
-- **Configurable colours** and typography in a single settings file
-- Extensive set of **shortcodes** to include various elements; such as buttons, icons, figure images and more
-- Solid **typographic framework** from [Sassline](https://sassline.com/)
-- Configurable navigation via a single file
-- Modular Jekyll components
-- Post category support in the form of a single post index page grouped by category
-- Built in live search using JavaScript
-- **Contact form** built in using [Formspree](https://formspree.io/)
-- Designed with **[Siteleaf](https://www.siteleaf.com/)** in mind
-- Has 9 of the most popular networks as performant sharing buttons
-- Has documentation
+### Education
+- **BS in Agronomy** 
+  <br>
+  2019-09 - 2023-06
+  <br>
+  National Chung Hsing University (Taichung, Taiwan)
+- **MS in Agronomy (Biostatistics and Bioinformatics Division)**
+  <br>
+  2023-09 - 2025-06
+  <br>
+  National Chung Hsing University (Taichung, Taiwan)
 
-## Examples
+---
 
-Here are a few examples of Alembic out in the wild being used in a variety of ways:
+### Selected Publications
+1. <u>Huang, Y.-H.</u>, Chen, L.-Y., Septiningsih E. M., Kao, P.-H., Kao, C.-F. (2025) ShiNyP: Unlocking SNP-Based Population Genetics—An AI-Assisted Platform for Rapid and Interactive Visual Exploration. *Molecular Biology and Evolution, 43*(6), msaf117. DOI: [10.1093/molbev/msaf117](https://doi.org/10.1093/molbev/msaf117)
 
-- [bawejakunal.github.io](https://bawejakunal.github.io/)
-- [case2111.github.io](https://case2111.github.io/)
-- [karateca.org](https://www.karateca.org/)
+2. <u>Huang, Y.-H.</u>, Ku, H. M., Wang, C. A., Chen, L. Y., He, S. S., Chen, S., ... & Kao, C. F. (2022). A multiple phenotype imputation method for genetic diversity and core collection in Taiwanese vegetable soybean. *Frontiers in Plant Science, 13*, 948349. DOI: [10.3389/fpls.2022.948349](https://doi.org/10.3389/fpls.2022.948349)
 
-## Installation
+---
 
-### Quick setup
+### Experience
+- **NCHU-TAMU Bilateral Academic Cooperation**
+  <br>
+  Texas A&M University (College station, USA)
+  <br>
+  2024-11 to 2025-02
 
-To give you a running start I've put together some starter kits that you can download, fork or even deploy immediately:
+---
 
-- ⚗️🍨 Vanilla Jekyll starter kit  
-  [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/daviddarnes/alembic-kit){:style="background: none"}
-- ⚗️🌲 Forestry starter kit  
-  [![Deploy to Forestry](https://assets.forestry.io/import-to-forestry.svg)](https://app.forestry.io/quick-start?repo=daviddarnes/alembic-forestry-kit&engine=jekyll){:style="background: none"}  
-  [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/daviddarnes/alembic-forestry-kit){:style="background: none"}
-- ⚗️💠 Netlify CMS starter kit  
-  [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/daviddarnes/alembic-netlifycms-kit&stack=cms){:style="background: none"}
+### Honors
+- College Student Research Creativity Award, National Science and Technology Council (NTSC), Taiwan, 2023
+- 4th CH Biotech Innovation Award, CH Biotech R&D Co., LTD, 2023
 
-- ⚗️:octocat: GitHub Pages with remote theme kit  
-  {% include button.html text="Download kit" link="https://github.com/daviddarnes/alembic-kit/archive/remote-theme.zip" color="#24292e" %}
-- ⚗️🚀 Stackbit starter kit  
-  [![Create with Stackbit](https://assets.stackbit.com/badge/create-with-stackbit.svg)](https://app.stackbit.com/create?theme=https://github.com/daviddarnes/alembic-stackbit-kit){:style="background: none"}
+---
 
-### As a Jekyll theme
+### Research Interests
+- Population Genetics
+- Statistical Genomics
+- Generative AI for Bio-data
+- Web App Development
+  
+---
 
-1. Add `gem "alembic-jekyll-theme"` to your `Gemfile` to add the theme as a dependancy
-2. Run the command `bundle install` in the root of project to install the theme and its dependancies
-3. Add `theme: alembic-jekyll-theme` to your `_config.yml` file to set the site theme
-4. Run `bundle exec jekyll serve` to build and serve your site
-5. Done! Use the [configuration](#configuration) documentation and the example [`_config.yml`](https://github.com/daviddarnes/alembic/blob/master/_config.yml) file to set things like the navigation, contact form and social sharing buttons
 
-### As a GitHub Pages remote theme
 
-1. Add `gem "jekyll-remote-theme"` to your `Gemfile` to add the theme as a dependancy
-2. Run the command `bundle install` in the root of project to install the jekyll remote theme gem as a dependancy
-3. Add `jekyll-remote-theme` to the list of `plugins` in your `_config.yml` file
-4. Add `remote_theme: daviddarnes/alembic@main` to your `_config.yml` file to set the site theme
-5. Run `bundle exec jekyll serve` to build and serve your site
-6. Done! Use the [configuration](#configuration) documentation and the example [`_config.yml`](https://github.com/daviddarnes/alembic/blob/master/_config.yml) file to set things like the navigation, contact form and social sharing buttons
-
-### As a Boilerplate / Fork
-
-_(deprecated, not recommended)_
-
-1. [Fork the repo](https://github.com/daviddarnes/alembic#fork-destination-box)
-2. Replace the `Gemfile` with one stating all the gems used in your project
-3. Delete the following unnecessary files/folders: `.github`, `LICENSE`, `screenshot.png`, `CNAME` and `alembic-jekyll-theme.gemspec`
-4. Run the command `bundle install` in the root of project to install the jekyll remote theme gem as a dependancy
-5. Run `bundle exec jekyll serve` to build and serve your site
-6. Done! Use the [configuration](#configuration) documentation and the example [`_config.yml`](https://github.com/daviddarnes/alembic/blob/master/_config.yml) file to set things like the navigation, contact form and social sharing buttons
-
-## Customising
-
-When using Alembic as a theme means you can take advantage of the file overriding method. This allows you to overwrite any file in this theme with your own custom file, by matching the file name and path. The most common example of this would be if you want to add your own styles or change the core style settings.
-
-To add your own styles copy the [`styles.scss`](https://github.com/daviddarnes/alembic/blob/master/assets/styles.scss) into your own project with the same file path (`assets/styles.scss`). From there you can add your own styles, you can even optionally ignore the theme styles by removing the `@import "alembic";` line.
-
-If you're looking to set your own colours and fonts you can overwrite them by matching the variable names from the [`_settings.scss`](https://github.com/daviddarnes/alembic/blob/master/_sass/_settings.scss) file in your own `styles.scss`, make sure to state them before the `@import "alembic";` line so they take effect. The settings are a mixture of custom variables and settings from [Sassline](https://medium.com/@jakegiltsoff/sassline-v2-0-e424b2881e7e) - follow the link to find out how to configure the typographic settings.
+### Links
+- [Google Scholar](https://scholar.google.com.tw/citations?user=lfm77r0AAAAJ&hl=en&oi=sra)
+- [LinkedIn](https://orcid.org/my-orcid?orcid=0009-0004-6353-0399)
+- [ORCID](https://orcid.org/0009-0004-6353-0399)
+- [GitHub](https://github.com/TeddYenn)
+- [_ShiNyP_ Platform](https://teddyenn.github.io/ShiNyP-guide)
