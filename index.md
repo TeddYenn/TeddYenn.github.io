@@ -23,9 +23,9 @@ aside: true
 - Research experience at Texas A&M University; presentations at PAG 32 and the 2024 ASA, CSSA & SSSA meeting.
 - Currently learning and exploring multi-omics data integration and systems biology.
 
-My CV: 
-<br>
-My Resume: 
+My CV: <a href="https://drive.google.com/file/d/1mYbWMFUOSIPLqhcFNsDf4TlDiEStaBTz/view?usp=sharing" target="_blank">My_CV_Teddy_(Huang Yen-Hsiang)_v20250601.pdf</a>
+
+
 
 ---
 
