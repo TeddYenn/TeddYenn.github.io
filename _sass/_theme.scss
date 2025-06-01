@@ -2,7 +2,6 @@
 body {
   background: $backgroundColour;
   color: $bodyColour;
-  font-size: 0.98em;
   height: 100%;
   display: flex;
   @include flex-direction(column);
