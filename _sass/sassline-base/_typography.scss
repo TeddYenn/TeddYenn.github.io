@@ -268,40 +268,54 @@ a {
 
   // Quotes.
   blockquote {
+  background: #f5f8fa;
+  border-radius: 0.6rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+  margin: 1rem 0;
+  padding: 1.1rem 1.6rem 1.1rem 1.5rem;
+  position: relative;
 
-    p {
-      border-left: 0.15rem solid $linkColour;
-      font-style: map-get($bodytype, italic);
-      padding-left: 1rem;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 1rem;
+    left: 0.5rem;
+    width: 0.2rem;
+    height: calc(100% - 2rem);
+    background: $linkColour;
+    border-radius: 1rem;
+  }
 
-      // Add spacing below blockquote paragraphs to align to baseline grid.
-      $get-scale: map-get($modular-scale, scale-0);
-      $get-size: map-get($get-scale, zeta);
-      $rootsize: nth($sizes, 1);
-      $baseline-shift: #{($get-size / 2 * ((2 * $rootsize / $get-size) - map-get($bodytype, cap-height))) / $rootsize + 0.00001};
-      $baseline-push: #{3 - (($get-size * ((2 * $rootsize / $get-size) - map-get($bodytype, cap-height))) / $rootsize + 0.00001)};
+  p {
+    font-size: 0.99em;
+    font-family: map-get($bodytype, font-family);
+    font-weight: 400;
+    color: #374151;
+    line-height: 1.65;
+    letter-spacing: 0.01em;
+    border: none;
+    background: none;
+    padding-left: 0.9rem;
+    margin: 0;
 
-      margin-bottom: #{$baseline-push}rem;
-      padding-bottom: #{$baseline-shift}rem;
+    font-style: map-get($bodytype, italic);
 
-      @for $i from 2 through $breakpoints-limit {
-        $get-scale: map-get($modular-scale, scale-#{$i - 1});
-        $get-size: map-get($get-scale, zeta);
-        $rootsize: nth($sizes, $i);
-        $baseline-shift: #{($get-size / 2 * ((2 * $rootsize / $get-size) - map-get($bodytype, cap-height))) / $rootsize + 0.00001};
-        $baseline-push: #{3 - (($get-size * ((2 * $rootsize / $get-size) - map-get($bodytype, cap-height))) / $rootsize + 0.00001)};
+    margin-bottom: 1.1rem;
 
-        @media screen and (min-width: nth($points, $i) / 16 * 1em ) {
-          margin-bottom: #{$baseline-push}rem;
-          padding-bottom: #{$baseline-shift}rem;
-        }
+    @for $i from 2 through $breakpoints-limit {
+      @media screen and (min-width: nth($points, $i) / 16 * 1em ) {
+        font-size: 0.95em;
+        margin-bottom: 1.2rem;
       }
     }
-
-    @include breakpoint(break-1) {
-      margin-left: -1rem;
-    }
   }
+
+  @include breakpoint(break-1) {
+    margin-left: 0;
+    padding-left: 1.1rem;
+  }
+}
+
 
   // Horizontal rule.
   hr {

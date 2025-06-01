@@ -33,6 +33,7 @@ plugins:
 - jekyll-feed
 - jekyll-commonmark
 - jekyll-include-cache
+- jekyll-toc
 - jemoji
 
 # 3. Gem settings
@@ -63,12 +64,17 @@ timezone: Asia/Taipei # Timezone for blog posts and alike
 # 5. Collections
 collections:
   posts:
-    title: Posts # Needed for Siteleaf
+    title:
     output: true
-    description: "My thoughts and ideas" # The post list page content
+    description: |
     feature_text: |
-      Welcome to the blog
-    feature_image: "https://picsum.photos/2560/600?image=866"
+      ## Posts
+      My thoughts, learnings, studies, and outcomes
+    feature_image: "/assets/Blog_BG.JPG"
+    paginate: 10
+    paginate_path: "/page:num/"
+
+# <small>▲ Photo by Me.  📍<a href="https://maps.app.goo.gl/wMxE8UiFsezirjvM8" target="_blank" rel="noopener">Bryan</a>, Texas, US.</small>
 
 # 6. Jekyll collections settings
 defaults:
@@ -94,7 +100,7 @@ defaults:
 encoding: utf-8 # Make sure the encoding is right
 lang: en-GB # Set the site language
 title: "Teddy (Y.-H., Huang)" # Site name or title, also used in jekyll-seo-tag
-logo: "/assets/logos/logo.svg" # Site logo, also used in jekyll-seo-tag
+logo: "/assets/logos/logo@96px.png" # Site logo, also used in jekyll-seo-tag
 url: "https://teddyenn.github.io/" # Site url, also used in jekyll-seo-tag
 # baseurl: "mailto:teddyhuangyh@gmail.com"
 repo: "https://github.com/TeddYenn/TeddYenn.github.io"
@@ -141,7 +147,7 @@ social_links: # Appears in sidebar. Set the urls then uncomment and comment out 
   # Twitter: 
   LinkedIn: https://www.linkedin.com/in/yen-hsiang-huang-03660b347/
   GitHub: https://github.com/TeddYenn
-  link: https://teddyenn.github.io/
+  # link: https://teddyenn.github.io/
   email: mailto:teddyhuangyh@gmail.com
 
 sharing_links: # Appear at the bottom of single blog posts, add as desired. The value can be 'true' or the desired button colour

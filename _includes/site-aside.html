@@ -1,4 +1,40 @@
 <aside class="aside  typeset  aside--{{ include.align | default: 'right' }}">
+  <nav class="toc">
+  <h3>Contents</h3>
+  <ul id="sidebar-toc"></ul>
+</nav>
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+  var toc = document.getElementById('sidebar-toc');
+  // 每次生成前先清空，防止重複
+  toc.innerHTML = "";
+  // 用 .content 最準確，或改成你主題的內容 class
+  var headers = document.querySelectorAll('.content h2, .content h3');
+  if (!headers.length) {
+    var main = document.querySelector('main');
+    if (!main) return;
+    headers = main.querySelectorAll('h2, h3, h4');
+  }
+  var used = {};
+  var exclude = ["Contents", "About"];
+  headers.forEach(function(h){
+    if (exclude.includes(h.textContent.trim())) return;
+    if (!h.id) h.id = h.textContent.replace(/\s+/g, '-').toLowerCase();
+    if (used[h.id]) return;
+    used[h.id] = true;
+    var li = document.createElement('li');
+    if(h.tagName==="H3") li.style.marginLeft="1.5em";
+    var a = document.createElement('a');
+    a.href="#"+h.id;
+    a.textContent = h.textContent;
+    li.appendChild(a);
+    toc.appendChild(li);
+  });
+});
+</script>
+
+
+
 
   {% if page.layout == "post" %}
     <section class="section  section--related-posts">
