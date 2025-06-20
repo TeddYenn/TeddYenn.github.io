@@ -64,6 +64,14 @@ body {
   }
 }
 
+// Smaller title size for blog posts
+.article--post > h1,
+.article--post > h2,
+.article--post > h3,
+.article--post > h4 {
+  font-size: 1.5rem;
+}
+
 .logo {
   display: inline-block;
   line-height: 0;

@@ -13,18 +13,17 @@ aside: true
 <small>▲ Photo by Me.</small>
 <span style="display:inline-block;width:0.5em;"></span>
 <small>
-  📍<a href="https://maps.app.goo.gl/Ja6vknxFsyizYe136" target="_blank" rel="noopener">Puli</a>, Nantou, Taiwan 🇹🇼.
+  📍<a href="https://maps.app.goo.gl/Ja6vknxFsyizYe136" target="_blank" rel="noopener">Puli</a>, Nantou, Taiwan.
 </small>
 
 
 ### About Me
 
 - **Developer of <a href="https://teddyenn.github.io/ShiNyP-guide" target="_blank">_ShiNyP_</a>** — an R/Shiny platform for SNP analysis and visualization with AI-assisted features.
-- Research experience at Texas A&M University; presentations at PAG 32 and the 2024 ASA, CSSA & SSSA meeting.
-- Currently learning and exploring multi-omics data integration and systems biology.
+- Research experience at Texas A&M University; Oral presentations at PAG 32 and the 2024 ASA, CSSA & SSSA meeting.
+- Currently learning and exploring multi-omics data integration and automated AI agents for biology.
 
-My CV: <a href="https://drive.google.com/file/d/1mYbWMFUOSIPLqhcFNsDf4TlDiEStaBTz/view?usp=sharing" target="_blank">My_CV_Teddy_(Huang Yen-Hsiang)_v20250601.pdf</a>
-
+My CV: <a href="https://drive.google.com/file/d/1mYbWMFUOSIPLqhcFNsDf4TlDiEStaBTz/view?usp=sharing" target="_blank">My_CV_v20250601.pdf</a>
 
 
 ---
@@ -44,10 +43,10 @@ My CV: <a href="https://drive.google.com/file/d/1mYbWMFUOSIPLqhcFNsDf4TlDiEStaBT
 ---
 
 ### Selected Publications
-1. <u>Huang, Y.-H.</u>, Chen, L.-Y., Septiningsih E. M., Kao, P.-H., Kao, C.-F. (2025) ShiNyP: Unlocking SNP-Based Population Genetics—An AI-Assisted Platform for Rapid and Interactive Visual Exploration. *Molecular Biology and Evolution, 43*(6), msaf117. 
+1. <u>Huang, Y.-H.</u>, Chen, L.-Y., Septiningsih E. M., Kao, P.-H., Kao, C.-F. (2025) ShiNyP: Unlocking SNP-Based Population Genetics—AI-Assisted Platform for Rapid and Interactive Visual Exploration. *Molecular Biology and Evolution* (IF: 11.0, GENETICS & HEREDITY: 3.9%), *42*(6), msaf117. 
 DOI: <a href="https://doi.org/10.1093/molbev/msaf117" target="_blank">10.1093/molbev/msaf117</a>
 
-2. <u>Huang, Y.-H.</u>, Ku, H. M., Wang, C. A., Chen, L. Y., He, S. S., Chen, S., ... & Kao, C. F. (2022). A multiple phenotype imputation method for genetic diversity and core collection in Taiwanese vegetable soybean. *Frontiers in Plant Science, 13*, 948349. 
+2. <u>Huang, Y.-H.</u>, Ku, H. M., Wang, C. A., Chen, L. Y., He, S. S., Chen, S., ... & Kao, C. F. (2022). A Multiple Phenotype Imputation Method for Genetic Diversity and Core Collection in Taiwanese Vegetable Soybean. *Frontiers in Plant Science* (IF: 6.6, PLANT SCIENCES: 8.2%), *13*, 948349. 
 DOI: <a href="https://doi.org/10.3389/fpls.2022.948349" target="_blank">10.3389/fpls.2022.948349</a>
 
 ---
@@ -62,8 +61,8 @@ DOI: <a href="https://doi.org/10.3389/fpls.2022.948349" target="_blank">10.3389/
 ---
 
 ### Awards
-- College Student Research Creativity Award, 2023. National Science and Technology Council (NTSC), Taiwan
-- 4th CH Biotech Innovation Award, 2023. CH Biotech R&D Co., LTD
+- 6th CH Biotech Innovation Award (Gold Medal Award), 2025. CH Biotech R&D Co., LTD
+- College Student Research Creativity Award (Top 2-3% of Applicants), 2023. National Science and Technology Council, Taiwan
 
 ---
 
