@@ -43,16 +43,16 @@ My CV: <a href="https://drive.google.com/file/d/1mYbWMFUOSIPLqhcFNsDf4TlDiEStaBT
 ---
 
 ### Selected Publications
-1. <u>Huang, Y.-H.</u>, Chen, L.-Y., Septiningsih E. M., Kao, P.-H., Kao, C.-F. (2025) ShiNyP: Unlocking SNP-Based Population Genetics—AI-Assisted Platform for Rapid and Interactive Visual Exploration. *Molecular Biology and Evolution* (IF: 11.0, GENETICS & HEREDITY: 3.9%), *42*(6), msaf117. 
+1. <u>Huang, Y.-H.</u>, Chen, L.-Y., Septiningsih E. M., Kao, P.-H., Kao, C.-F. (2025) *ShiNyP*: Unlocking SNP-Based Population Genetics—AI-Assisted Platform for Rapid and Interactive Visual Exploration. *Molecular Biology and Evolution* (IF: 11.0, GENETICS & HEREDITY: 3.9%), *42*(6), msaf117. 
 DOI: <a href="https://doi.org/10.1093/molbev/msaf117" target="_blank">10.1093/molbev/msaf117</a>
 
-2. <u>Huang, Y.-H.</u>, Ku, H. M., Wang, C. A., Chen, L. Y., He, S. S., Chen, S., ... & Kao, C. F. (2022). A Multiple Phenotype Imputation Method for Genetic Diversity and Core Collection in Taiwanese Vegetable Soybean. *Frontiers in Plant Science* (IF: 6.6, PLANT SCIENCES: 8.2%), *13*, 948349. 
+2. <u>Huang, Y.-H.</u>, Ku, H.-M., Wang, C.-A., Chen, L.-Y., He, S.-S., Chen, S., ... & Kao, C.-F. (2022). A Multiple Phenotype Imputation Method for Genetic Diversity and Core Collection in Taiwanese Vegetable Soybean. *Frontiers in Plant Science* (IF: 6.6, PLANT SCIENCES: 8.2%), *13*, 948349. 
 DOI: <a href="https://doi.org/10.3389/fpls.2022.948349" target="_blank">10.3389/fpls.2022.948349</a>
 
 ---
 
 ### Experience
-- **NCHU-TAMU Bilateral Academic Cooperation**
+- **NCHU-TAMU Exchange Program**
   <br>
   Texas A&M University (College Station, USA)
   <br>
@@ -61,8 +61,8 @@ DOI: <a href="https://doi.org/10.3389/fpls.2022.948349" target="_blank">10.3389/
 ---
 
 ### Awards
-- 6th CH Biotech Innovation Award (Gold Medal Award), 2025. CH Biotech R&D Co., LTD
-- College Student Research Creativity Award (Top 2-3% of Applicants), 2023. National Science and Technology Council, Taiwan
+- **6th CH Biotech Innovation Award** (Gold Medal Award), 2025. CH Biotech R&D Co., LTD
+- **College Student Research Creativity Award** (Top 2-3% of Applicants), 2023. National Science and Technology Council, Taiwan
 
 ---
 
