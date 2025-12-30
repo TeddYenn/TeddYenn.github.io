@@ -1,0 +1,106 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+import { Send, Mail, Linkedin } from 'lucide-react';
+
+const Contact = () => {
+    return (
+        <section id="contact" className="py-20 bg-white">
+            <div className="container mx-auto px-6">
+                <div className="max-w-4xl mx-auto bg-primary/5 rounded-3xl p-8 md:p-12">
+
+                    <div className="text-center mb-12">
+                        <h2 className="text-3xl font-bold text-primary mb-4">Get in Touch</h2>
+                        <p className="text-gray-600">
+                            Interested in collaboration or have a question about my research?
+                        </p>
+                    </div>
+
+                    <div className="grid md:grid-cols-2 gap-12">
+
+                        {/* Contact Info */}
+                        <div className="space-y-8">
+                            <h3 className="text-xl font-bold text-gray-800">Contact Info</h3>
+
+                            <div className="flex items-center gap-4">
+                                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm text-primary">
+                                    <Mail size={24} />
+                                </div>
+                                <div>
+                                    <p className="text-sm text-gray-500 font-medium">Email</p>
+                                    <a href="mailto:teddyhuangyh@gmail.com" className="text-lg font-semibold text-gray-800 hover:text-primary transition-colors">
+                                        teddyhuangyh@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div className="flex items-center gap-4">
+                                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm text-primary">
+                                    <Linkedin size={24} />
+                                </div>
+                                <div>
+                                    <p className="text-sm text-gray-500 font-medium">Social</p>
+                                    <a href="https://www.linkedin.com/in/yen-hsiang-huang-03660b347/" target="_blank" rel="noopener noreferrer" className="text-lg font-semibold text-gray-800 hover:text-primary transition-colors">
+                                        Connect on LinkedIn
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Contact Form */}
+                        <form
+                            action="https://formspree.io/f/YOUR_FORM_ID"
+                            method="POST"
+                            className="space-y-4"
+                        >
+                            <div>
+                                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    required
+                                    className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all bg-white"
+                                    placeholder="Your Name"
+                                />
+                            </div>
+
+                            <div>
+                                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    required
+                                    className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all bg-white"
+                                    placeholder="your@email.com"
+                                />
+                            </div>
+
+                            <div>
+                                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    rows="4"
+                                    required
+                                    className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all bg-white resize-none"
+                                    placeholder="How can I help you?"
+                                ></textarea>
+                            </div>
+
+                            <button
+                                type="submit"
+                                className="w-full bg-primary hover:bg-primary-dark text-white font-bold py-3 px-6 rounded-lg flex items-center justify-center gap-2 transition-colors shadow-lg shadow-primary/30"
+                            >
+                                Send Message <Send size={18} />
+                            </button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default Contact;
