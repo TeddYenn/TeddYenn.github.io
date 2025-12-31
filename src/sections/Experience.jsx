@@ -244,11 +244,9 @@ const experiences = [
                     type: 'Award',
                     location: 'Tainan, Taiwan',
                     details: {
-                        description: 'Awarded for the best visual presentation and defense of research findings at the national conference.',
+                        description: '',
                         images: [],
-                        links: [
-                            { label: 'Conference Link', url: 'https://example.com' }
-                        ]
+                        links: []
                     }
                 }
             ]
@@ -265,75 +263,42 @@ const experiences = [
         details: {
             longDescription: 'Worked in the Rice Genomics Lab, focusing on identifying genetic markers associated with drought tolerance. Utilized high-performance computing clusters to process terabytes of sequencing data.',
             achievements: [
-                'Identified 5 novel QTLs associated with drought resistance in rice.',
-                'Optimized GATK-based variant calling workflows for polyploid species.',
-                'Co-authored 2 peer-reviewed papers in high-impact journals.'
+                '',
+                '',
+                ''
             ],
-            activities: [
                 {
-                    id: 'tsc-award',
-                    title: 'TSC Thesis Award',
-                    year: '2022',
-                    category: 'AI Application',
-                    type: 'Award',
-                    location: 'Taiwan',
-                    details: {
-                        description: 'Awarded for the innovative application of deep learning models in predicting rice yield from satellite imagery. The research demonstrated a 15% improvement in prediction accuracy compared to traditional methods.',
-                        images: [],
-                        links: [
-                            { label: 'Award Details', url: 'https://example.com' }
-                        ]
-                    }
-                },
-                {
-                    id: 'asa-conf',
-                    title: 'ASA, CSSA, SSSA International Annual Meeting 2022',
-                    year: '2022',
-                    type: 'Poster Presentation',
-                    location: 'Baltimore, MD, USA',
-                    details: {
-                        description: 'Presented research on "Genomic Prediction in Polyploid Crops" to an international audience of agronomists and geneticists.',
-                        images: [],
-                        links: [
-                            { label: 'Abstract', url: 'https://example.com' },
-                            { label: 'Poster', url: 'https://example.com' }
-                        ]
-                    }
-                },
-                {
-                    id: 'tamu-conf',
-                    title: 'TAMU Crop Science Conference 2023',
-                    year: '2023',
-                    type: 'Oral Presentation',
-                    location: 'College Station, TX, USA',
-                    details: {
-                        description: 'Delivered an oral presentation on the findings from the drought tolerance study in rice.',
-                        images: [],
-                        links: [
-                            { label: 'Presentation', url: 'https://example.com' }
-                        ]
-                    }
-                }
-            ]
+        id: 'asa-conf',
+        title: 'ASA, CSSA, SSSA International Annual Meeting 2024',
+        year: '2024',
+        type: 'Poster Presentation',
+        location: 'USA',
+        details: {
+            description: '',
+            images: [],
+            links: []
+        }
+    }
+]
         }
     },
-    {
-        id: 'undergrad',
+{
+    id: 'undergrad',
         type: 'education',
-        period: '2019 - 2023',
-        role: 'BS in Agronomy',
-        institution: 'National Chung Hsing University (NCHU)',
-        location: 'Taichung, Taiwan',
+            period: '2019 - 2023',
+                role: 'BS in Agronomy',
+                    institution: 'National Chung Hsing University (NCHU)',
+                        location: 'Taichung, Taiwan',
 
-        details: {
-            longDescription: 'Comprehensive study of crop physiology, genetics, and breeding. Completed capstone project on "Effect of Nitrogen Fertilizer on Rice Yield".',
+                            details: {
+        longDescription: 'Comprehensive study of crop physiology, genetics, and breeding. Completed capstone project on "Effect of Nitrogen Fertilizer on Rice Yield".',
             achievements: [
                 'GPA: 3.93/4.30',
                 'Conducted a research project on "".'
             ],
-            activities: []
-        }
+                activities: []
     }
+}
 ];
 
 const ActivityItem = ({ activity, onClick }) => {
