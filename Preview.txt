@@ -1,2 +1,7 @@
 npm run build
 npm run preview
+
+
+git add .
+git commit -m "Update info"
+git push

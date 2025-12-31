@@ -262,43 +262,39 @@ const experiences = [
 
         details: {
             longDescription: 'Worked in the Rice Genomics Lab, focusing on identifying genetic markers associated with drought tolerance. Utilized high-performance computing clusters to process terabytes of sequencing data.',
-            achievements: [
-                '',
-                '',
-                ''
-            ],
+            achievements: [],
+            activities: [
                 {
-        id: 'asa-conf',
-        title: 'ASA, CSSA, SSSA International Annual Meeting 2024',
-        year: '2024',
-        type: 'Poster Presentation',
-        location: 'USA',
-        details: {
-            description: '',
-            images: [],
-            links: []
-        }
-    }
-]
+                    id: 'asa-conf',
+                    title: 'ASA, CSSA, SSSA International Annual Meeting 2024',
+                    year: '2024',
+                    type: 'Poster Presentation',
+                    location: 'USA',
+                    details: {
+                        description: '',
+                        images: [],
+                        links: []
+                    }
+                }
+            ]
         }
     },
-{
-    id: 'undergrad',
+    {
+        id: 'undergrad',
         type: 'education',
-            period: '2019 - 2023',
-                role: 'BS in Agronomy',
-                    institution: 'National Chung Hsing University (NCHU)',
-                        location: 'Taichung, Taiwan',
-
-                            details: {
-        longDescription: 'Comprehensive study of crop physiology, genetics, and breeding. Completed capstone project on "Effect of Nitrogen Fertilizer on Rice Yield".',
+        period: '2019 - 2023',
+        role: 'BS in Agronomy',
+        institution: 'National Chung Hsing University (NCHU)',
+        location: 'Taichung, Taiwan',
+        details: {
+            longDescription: 'Comprehensive study of crop physiology, genetics, and breeding. Completed capstone project on "Effect of Nitrogen Fertilizer on Rice Yield".',
             achievements: [
                 'GPA: 3.93/4.30',
                 'Conducted a research project on "".'
             ],
-                activities: []
+            activities: []
+        }
     }
-}
 ];
 
 const ActivityItem = ({ activity, onClick }) => {
