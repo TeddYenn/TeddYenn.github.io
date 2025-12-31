@@ -1,8 +1,7 @@
 import React from 'react';
 import { Github, Linkedin, Mail, BookOpen, Fingerprint } from 'lucide-react';
 import { motion } from 'framer-motion';
-// Placeholder for headshot - in a real app, import the image
-// import headshot from '../assets/headshot.jpg'; 
+import headshot from '../assets/headshot.jpg';
 
 const Hero = () => {
     return (
@@ -17,13 +16,17 @@ const Hero = () => {
                         transition={{ duration: 0.6 }}
                         className="w-full md:w-1/3 flex justify-center"
                     >
-                        <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden shadow-xl border-4 border-white">
-                            {/* Placeholder Image */}
-                            <div className="w-full h-full bg-gray-200 flex items-center justify-center text-gray-400">
-                                <span className="text-lg">Headshot</span>
-                            </div>
-                            {/* <img src={headshot} alt="Yen-Hsiang Huang" className="w-full h-full object-cover" /> */}
-                        </div>
+                        <motion.div
+                            whileHover={{ scale: 1.2 }}
+                            transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                            className="relative w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden shadow-xl border-4 border-white dark:border-primary-bright/30 cursor-pointer"
+                        >
+                            <img
+                                src={headshot}
+                                alt="Yen-Hsiang (Teddy) Huang"
+                                className="w-full h-full object-cover"
+                            />
+                        </motion.div>
                     </motion.div>
 
                     {/* Right Side: Content */}
@@ -33,16 +36,16 @@ const Hero = () => {
                         transition={{ duration: 0.6, delay: 0.2 }}
                         className="w-full md:w-2/3 text-center md:text-left"
                     >
-                        <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+                        <h1 className="text-4xl md:text-5xl font-bold text-primary dark:text-white mb-4">
                             Yen-Hsiang (Teddy) Huang
                         </h1>
-                        <h2 className="text-xl md:text-2xl text-secondary font-medium mb-6">
+                        <h2 className="text-xl md:text-2xl text-secondary dark:text-gray-300 font-medium mb-6">
                             MS Graduate from NCHU, Taiwan
                         </h2>
 
-                        <p className="text-gray-600 text-lg leading-relaxed mb-8 max-w-2xl mx-auto md:mx-0">
-                            Specializing in reusable computational pipelines and AI-assisted SNP analysis.
-                            Bridging the gap between complex genomic data and actionable agricultural insights
+                        <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed mb-8 max-w-2xl mx-auto md:mx-0">
+                            Specializing in reusable computational pipelines and genomic data analysis.
+                            Bridging the gap between complex biological data and actionable agricultural insights
                             through advanced statistical modeling and software development.
                         </p>
 
@@ -65,7 +68,7 @@ const SocialLink = ({ href, icon, label }) => (
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-secondary hover:text-primary transition-colors p-2 hover:bg-gray-100 rounded-full"
+        className="text-secondary dark:text-gray-400 hover:text-primary dark:hover:text-primary-bright transition-colors p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full"
         aria-label={label}
     >
         {icon}

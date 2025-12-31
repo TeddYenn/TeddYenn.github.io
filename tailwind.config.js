@@ -4,6 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
@@ -11,6 +12,7 @@ export default {
           DEFAULT: '#1B4D3E', // Deep Green
           light: '#2C6E58',
           dark: '#113529',
+          bright: '#4ADE80', // Bright Green for Dark Mode
         },
         secondary: {
           DEFAULT: '#4A5568', // Slate Gray
