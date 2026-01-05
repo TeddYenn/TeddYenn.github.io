@@ -6,10 +6,16 @@ import { Briefcase, Calendar, ChevronDown, Award, MapPin, GraduationCap, Externa
 import tbia1 from '../assets/tbia-award/tbia-award-1.jpg';
 import tbia2 from '../assets/tbia-award/tbia-award-2.jpg';
 import tbia3 from '../assets/tbia-award/tbia-award-3.png';
+
 import ciep1 from '../assets/ciep-visit/ciep-visit-1.jpg';
 import ciep2 from '../assets/ciep-visit/ciep-visit-2.jpg';
 import ciep3 from '../assets/ciep-visit/ciep-visit-3.jpg';
 import ciep4 from '../assets/ciep-visit/ciep-visit-4.jpg';
+
+import pag321 from '../assets/pag32/pag32-1.jpg';
+import pag322 from '../assets/pag32/pag32-2.png';
+import pag323 from '../assets/pag32/pag32-3.png';
+
 
 const ActivityModal = ({ activity, onClose }) => {
     const [zoomedImage, setZoomedImage] = useState(null);
@@ -17,8 +23,8 @@ const ActivityModal = ({ activity, onClose }) => {
 
     const getTagStyle = (type) => {
         if (type.includes('Award')) return 'bg-yellow-100 text-yellow-800 border-yellow-200 dark:bg-transparent dark:text-yellow-400 dark:border-yellow-400/50';
-        if (type.includes('Oral')) return 'bg-blue-100 text-blue-800 border-blue-200 dark:bg-transparent dark:text-blue-400 dark:border-blue-400/50';
-        if (type.includes('Poster')) return 'bg-teal-100 text-teal-800 border-teal-200 dark:bg-transparent dark:text-teal-400 dark:border-teal-400/50';
+        if (type.includes('Presentation')) return 'bg-blue-100 text-blue-800 border-blue-200 dark:bg-transparent dark:text-blue-400 dark:border-blue-400/50';
+        if (type.includes('Program')) return 'bg-teal-100 text-teal-800 border-teal-200 dark:bg-transparent dark:text-teal-400 dark:border-teal-400/50';
         return 'bg-gray-100 text-gray-800 border-gray-200 dark:bg-transparent dark:text-gray-300 dark:border-gray-500';
     };
 
@@ -169,16 +175,16 @@ const experiences = [
             longDescription: 'Thesis focused on "ShiNyP: Platform for SNP Data Analysis and Visualization". Advised by Dr. Chung-Feng Kao. Gained strong foundation in reusable population genetics analysis pipeline and R package development.',
             achievements: [
                 'GPA: 4.17/4.30; 36 credits of 17 courses',
-                '3 research studies: ShiNyP platform, GWAS for rice, Selection footprints in edamame',
-                '2 university visits: Tokyo University of Agriculture, Texas A&M University',
-                '3 travel grants; 4 scholarships; 5 academic awards'
+                'Completed 3 research studies: ShiNyP platform, GWAS for rice, Selection footprints in edamame',
+                'Attended 2 university visits: Tokyo University of Agriculture, Texas A&M University',
+                'Received 3 travel grants, 4 scholarships, 5 academic awards, 2 hackathon awards'
             ],
             activities: [
                 {
                     id: 'tbia-award',
                     title: 'Most Popular Award | 2nd TBIA Open Data Hackathon',
                     year: 'Aug 2025',
-                    category: 'Hackathon',
+                    category: 'Bio-Databases Hackathon',
                     type: 'Award',
                     location: 'Taipei, Taiwan',
                     details: {
@@ -195,7 +201,7 @@ const experiences = [
                     id: 'tsc-award',
                     title: 'Competitive Award | 18th TSC Thesis Competition',
                     year: 'Aug 2025',
-                    category: 'Thesis Competition',
+                    category: 'AI Thesis Competition',
                     type: 'Award',
                     location: 'College Station, USA',
                     details: {
@@ -224,8 +230,8 @@ const experiences = [
                 {
                     id: 'ch-biotech',
                     title: 'Gold Award | 6th CH Biotech Innovation Award',
-                    year: '2021',
-                    category: 'Research Innovation',
+                    year: 'Jul 2024',
+                    category: 'Agri-Biotech Research Innovation Competition',
                     type: 'Award',
                     location: 'Taipei, Taiwan',
                     details: {
@@ -237,18 +243,80 @@ const experiences = [
                     }
                 },
                 {
-                    id: 'poster-award',
-                    title: 'Best Poster Presentation',
-                    year: '2020',
-                    category: 'Annual Agronomy Conference',
-                    type: 'Award',
-                    location: 'Tainan, Taiwan',
+                    id: 'tamu-visit',
+                    title: 'Research Program Participant | Texas A&M University',
+                    year: 'Nov 2024 - Feb 2025',
+                    category: 'Visiting Scholar',
+                    type: 'Program',
+                    location: 'College Station, USA',
                     details: {
-                        description: '',
+                        description: 'I visited Texas A&M University to learn about the latest research in agronomy and biotechnology.',
                         images: [],
-                        links: []
+                        links: [
+                            { label: 'Texas A&M University', url: 'https://www.tamu.edu/' }
+                        ]
                     }
-                }
+                },
+                {
+                    id: 'cssa-award',
+                    title: 'Top 15 Finalist | Diversity Student Poster Contest, CSSA',
+                    year: 'Nov 2024',
+                    category: 'Poster Competition',
+                    type: 'Award',
+                    location: 'San Antonio, USA',
+                    details: {
+                        description: 'I received the top 15 finalist award for my poster presentation at the CSSA Diversity Student Poster Contest.',
+                        images: [],
+                        links: [
+                            { label: 'CSSA', url: 'https://www.cssa.org/' }
+                        ]
+                    }
+                },
+                {
+                    id: 'spc6-award',
+                    title: '2nd Place | 6th Science Paper Competition, NCHU',
+                    year: 'Jun 2024',
+                    category: 'Thesis Competition',
+                    type: 'Award',
+                    location: 'Taichung, Taiwan',
+                    details: {
+                        description: 'I received the top 2nd place award for my thesis presentation at the 6th Science Paper Competition.',
+                        images: [],
+                        links: [
+                            { label: 'NCHU', url: 'https://www.nchu.edu.tw/' }
+                        ]
+                    }
+                },
+                {
+                    id: 'aodh-award',
+                    title: 'Top 10 Finalist | 2023 Agriculture Open Data Hackathon, MOA, Taiwan',
+                    year: 'Nov 2023',
+                    category: 'Hackathon',
+                    type: 'Award',
+                    location: 'Taipei, Taiwan',
+                    details: {
+                        description: 'I received the top 10 finalist award for my hackathon presentation at the 2023 Agriculture Open Data Hackathon.',
+                        images: [],
+                        links: [
+                            { label: 'MOA', url: 'https://www.moa.gov.tw/' }
+                        ]
+                    }
+                },
+                {
+                    id: 'thai-visit',
+                    title: 'Invited Speaker | Kasetsart University',
+                    year: 'Nov 2023',
+                    category: 'Visiting Student',
+                    type: 'Presentation',
+                    location: 'Bangkok, Thailand',
+                    details: {
+                        description: 'I visited Kasetsart University to give a talk on my research.',
+                        images: [],
+                        links: [
+                            { label: 'Kasetsart University', url: 'https://www.ku.ac.th/' }
+                        ]
+                    }
+                },
             ]
         }
     },
@@ -258,18 +326,35 @@ const experiences = [
         period: 'Nov 2023 - Feb 2024',
         role: 'Visiting Scholar',
         institution: 'Texas A&M University (TAMU)',
-        location: 'College Station, TX, USA',
+        location: 'College Station, USA',
 
         details: {
-            longDescription: 'Worked in the Rice Genomics Lab, focusing on identifying genetic markers associated with drought tolerance. Utilized high-performance computing clusters to process terabytes of sequencing data.',
+            longDescription: 'Worked in a genomic editing lab (PI: Dr. Endang M. Septiningsih), focusing on identifying genetic markers associated with hypoxic germination tolerance in rice. Utilized high-performance computing clusters to process and analyze SNP data. During my visit, I also attended two conferences, departmental seminars, lab meetings, and university events.',
             achievements: [],
             activities: [
                 {
-                    id: 'asa-conf',
+                    id: 'pag32-conf',
+                    title: 'The 32th Plant and Animal Genome Conference (PAG 32)',
+                    year: 'Jan 2025',
+                    category: 'International Conference',
+                    type: 'Presentation',
+                    location: 'San Diego, USA',
+                    details: {
+                        description: '',
+                        images: [pag321, pag322, pag323],
+                        links: [
+                            { label: 'My Talk', url: 'https://plan.core-apps.com/pag32/event/4d484110adf7a8fd65f25ede0bea4d5f' },
+                            { label: 'PAG Website', url: 'https://intlpag.org/' }
+                        ]
+                    }
+                },
+                {
+                    id: 'asa2024-conf',
                     title: 'ASA, CSSA, SSSA International Annual Meeting 2024',
-                    year: '2024',
-                    type: 'Poster Presentation',
-                    location: 'USA',
+                    year: 'Nov 2024',
+                    category: 'International Conference',
+                    type: 'Presentation',
+                    location: 'San Antonio, USA',
                     details: {
                         description: '',
                         images: [],
@@ -287,12 +372,101 @@ const experiences = [
         institution: 'National Chung Hsing University (NCHU)',
         location: 'Taichung, Taiwan',
         details: {
-            longDescription: 'Comprehensive study of crop physiology, genetics, and breeding. Completed capstone project on "Effect of Nitrogen Fertilizer on Rice Yield".',
+            longDescription: 'Comprehensive study of crop physiology, genetics, and breeding as well as agricultural statistics, data analysis, and visualization. Completed a research project on "A Multiple Phenotype Imputation for Core Collection in Taiwanese Edamames".',
             achievements: [
-                'GPA: 3.93/4.30',
-                'Conducted a research project on "".'
+                'GPA: 3.93/4.30; 162 credits of 73 courses',
+                'Conducted a government-funded grant project & it was recognized as the best research outcomes nationally (top 2-3% of applicant)',
+                'Attended a university visit: Northwest A&F University',
+                'Received 4 scholarships, 4 academic awards'
             ],
-            activities: []
+            activities: [
+                {
+                    id: 'rca-award',
+                    title: 'Research Creation Award | College Student Research Project, NTSC, Taiwan',
+                    year: 'Jul 2023',
+                    category: 'Funded Research Project & Award',
+                    type: 'Award',
+                    location: 'Taipei, Taiwan',
+                    details: {
+                        description: '',
+                        images: [],
+                        links: []
+                    }
+                },
+                {
+                    id: 'ch4-biotech',
+                    title: 'Bronze Award | 4th CH Biotech Innovation Award',
+                    year: 'Jul 2023',
+                    category: 'Agri-Biotech Research Innovation Competition',
+                    type: 'Award',
+                    location: 'Nantou, Taiwan',
+                    details: {
+                        description: 'Recognized for the development of a novel algorithm for detecting genetic variants in polyploid crops. The project was selected as the top innovation among 50+ entries.',
+                        images: [],
+                        links: [
+                            { label: 'Innovation Award', url: 'https://example.com' }
+                        ]
+                    }
+                },
+                {
+                    id: 'nwau-visit',
+                    title: 'Program Participant | Northwest A&F University',
+                    year: 'Jun-Jul 2023',
+                    category: 'Visiting Student',
+                    type: 'Program',
+                    location: 'Yangling, China',
+                    details: {
+                        description: 'I visited Northwest A&F University to learn about the latest research in agronomy and biotechnology.',
+                        images: [],
+                        links: [
+                            { label: 'NWAU', url: 'https://www.nwafu.edu.cn/' }
+                        ]
+                    }
+                },
+                {
+                    id: 'spc5-award',
+                    title: '3rd Place | 5th Science Paper Competition, NCHU',
+                    year: 'Jun 2023',
+                    category: 'Thesis Competition',
+                    type: 'Award',
+                    location: 'Taichung, Taiwan',
+                    details: {
+                        description: 'I received the 3rd place award for my thesis presentation at the 5th Science Paper Competition.',
+                        images: [],
+                        links: [
+                            { label: 'NCHU', url: 'https://www.nchu.edu.tw/' }
+                        ]
+                    }
+                },
+                {
+                    id: 'poster-award',
+                    title: 'Outstanding Poster | 2023 Taiwan Society of Agronomy Annual Meeting',
+                    year: 'May 2023',
+                    category: 'Poster Presentation',
+                    type: 'Award',
+                    location: 'Taichung, Taiwan',
+                    details: {
+                        description: '',
+                        images: [],
+                        links: []
+                    }
+                },
+                {
+                    id: 'spc4-award',
+                    title: '2nd Place | 4th Science Paper Competition, NCHU',
+                    year: 'Jun 2022',
+                    category: 'Thesis Competition',
+                    type: 'Award',
+                    location: 'Taichung, Taiwan',
+                    details: {
+                        description: 'I received the 2nd place award for my thesis presentation at the 6th Science Paper Competition.',
+                        images: [],
+                        links: [
+                            { label: 'NCHU', url: 'https://www.nchu.edu.tw/' }
+                        ]
+                    }
+                },
+            ]
         }
     }
 ];
@@ -300,8 +474,8 @@ const experiences = [
 const ActivityItem = ({ activity, onClick }) => {
     const getTagStyle = (type) => {
         if (type.includes('Award')) return 'bg-yellow-100 text-yellow-800 border-yellow-200 dark:bg-transparent dark:text-yellow-400 dark:border-yellow-400/50';
-        if (type.includes('Oral')) return 'bg-blue-100 text-blue-800 border-blue-200 dark:bg-transparent dark:text-blue-400 dark:border-blue-400/50';
-        if (type.includes('Poster')) return 'bg-teal-100 text-teal-800 border-teal-200 dark:bg-transparent dark:text-teal-400 dark:border-teal-400/50';
+        if (type.includes('Presentation')) return 'bg-blue-100 text-blue-800 border-blue-200 dark:bg-transparent dark:text-blue-400 dark:border-blue-400/50';
+        if (type.includes('Program')) return 'bg-teal-100 text-teal-800 border-teal-200 dark:bg-transparent dark:text-teal-400 dark:border-teal-400/50';
         return 'bg-gray-100 text-gray-800 border-gray-200 dark:bg-transparent dark:text-gray-300 dark:border-gray-500';
     };
 

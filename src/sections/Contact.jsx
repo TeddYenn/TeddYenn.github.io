@@ -81,10 +81,10 @@ const Contact = () => {
                                 <textarea
                                     id="message"
                                     name="message"
-                                    rows="4"
+                                    rows="3"
                                     required
                                     className="w-full px-4 py-3 rounded-lg border border-gray-200 dark:border-gray-600 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all bg-white dark:bg-gray-700 dark:text-white resize-none"
-                                    placeholder="How can I help you?"
+                                    placeholder="Enjoy leaving something here!"
                                 ></textarea>
                             </div>
 
