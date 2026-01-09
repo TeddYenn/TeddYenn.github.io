@@ -16,6 +16,18 @@ import pag321 from '../assets/pag32/pag32-1.jpg';
 import pag322 from '../assets/pag32/pag32-2.png';
 import pag323 from '../assets/pag32/pag32-3.png';
 
+const ItalicizeShiNyP = ({ text }) => {
+    if (!text) return null;
+    const parts = text.split(/(ShiNyP)/);
+    return (
+        <>
+            {parts.map((part, i) =>
+                part === 'ShiNyP' ? <i key={i} className="italic">{part}</i> : part
+            )}
+        </>
+    );
+};
+
 
 const ActivityModal = ({ activity, onClose }) => {
     const [zoomedImage, setZoomedImage] = useState(null);
@@ -69,7 +81,7 @@ const ActivityModal = ({ activity, onClose }) => {
                                 )}
                             </div>
                             <h3 className="text-2xl font-bold text-gray-900 dark:text-white leading-tight mb-2">
-                                {activity.title}
+                                <ItalicizeShiNyP text={activity.title} />
                             </h3>
                             {activity.category && (
                                 <p className="text-primary dark:text-primary-bright font-medium">{activity.category}</p>
@@ -77,7 +89,9 @@ const ActivityModal = ({ activity, onClose }) => {
                         </div>
 
                         <div className="prose prose-sm max-w-none text-gray-600 dark:text-gray-300 mb-6">
-                            <p>{activity.details?.description || "No detailed description available."}</p>
+                            <p>
+                                <ItalicizeShiNyP text={activity.details?.description || "No detailed description available."} />
+                            </p>
                         </div>
 
                         {/* Links Section */}
@@ -92,7 +106,7 @@ const ActivityModal = ({ activity, onClose }) => {
                                         className="inline-flex items-center gap-1.5 text-sm font-medium text-primary dark:text-primary-bright hover:underline bg-primary/5 dark:bg-primary-bright/10 px-3 py-1.5 rounded-lg transition-colors"
                                     >
                                         <ExternalLink size={14} />
-                                        {link.label}
+                                        <ItalicizeShiNyP text={link.label} />
                                     </a>
                                 ))}
                             </div>
@@ -203,12 +217,12 @@ const experiences = [
                     year: 'Aug 2025',
                     category: 'AI Thesis Competition',
                     type: 'Award',
-                    location: 'College Station, USA',
+                    location: 'Taipei, Taiwan',
                     details: {
                         description: 'I received the competitive award for my thesis "ShiNyP: Platform for SNP Data Analysis and Visualization".',
                         images: [],
                         links: [
-                            { label: '', url: '' }
+                            { label: 'Event Page', url: 'https://www.facebook.com/TopcoAward' }
                         ]
                     }
                 },
@@ -216,14 +230,14 @@ const experiences = [
                     id: 'ciep-visit',
                     title: 'CIEP Participant | Tokyo University of Agriculture',
                     year: 'Jul-Aug 2025',
-                    category: 'Visiting Student',
+                    category: 'Visiting Program',
                     type: 'Program',
                     location: 'Tokyo, Japan',
                     details: {
-                        description: 'I visited Tokyo University of Agriculture to learn about the latest research in agronomy and biotechnology.',
+                        description: 'I visited Tokyo University of Agriculture to learn about the issues in sustainable agriculture. This year, the program was based at Okhotsk Campus, Tokyo University of Agriculture, Abashiri, Hokkaido. A total of 28 participants joined the program, including 16 Japanese students and 12 international students from 8 universities in 9 countries and regions.',
                         images: [ciep1, ciep2, ciep3, ciep4],
                         links: [
-                            { label: 'Tokyo NODAI', url: 'https://www.nodai.ac.jp/english/' }
+                            { label: 'Event Page', url: 'https://www.nodai.ac.jp/english/ip/international-students-summit/' }
                         ]
                     }
                 },
@@ -238,15 +252,15 @@ const experiences = [
                         description: 'Recognized for the development of a novel algorithm for detecting genetic variants in polyploid crops. The project was selected as the top innovation among 50+ entries.',
                         images: [],
                         links: [
-                            { label: 'Innovation Award', url: 'https://example.com' }
+                            { label: 'Event Page', url: 'https://www.chbio.com/en/latest_news/july-15-2025-the-ch-biotech-innovation-award-showcases-taiwans-rd-strengths-and-more-importantly-creates-value-on-the-global-stage/' }
                         ]
                     }
                 },
                 {
                     id: 'tamu-visit',
-                    title: 'Research Program Participant | Texas A&M University',
+                    title: 'Visiting Student | Texas A&M University',
                     year: 'Nov 2024 - Feb 2025',
-                    category: 'Visiting Scholar',
+                    category: 'Research Visiting Program',
                     type: 'Program',
                     location: 'College Station, USA',
                     details: {
@@ -268,7 +282,8 @@ const experiences = [
                         description: 'I received the top 15 finalist award for my poster presentation at the CSSA Diversity Student Poster Contest.',
                         images: [],
                         links: [
-                            { label: 'CSSA', url: 'https://www.cssa.org/' }
+                            { label: 'Event Page', url: 'https://www.sciencesocieties.org/files/meetings/student-competition-descriptions.pdf' },
+                            { label: 'Event Outcomes', url: 'https://www.sciencesocieties.org/publications/csa-news/2025/june/highlights-from-the-diversity-student-poster-competition' }
                         ]
                     }
                 },
@@ -283,7 +298,7 @@ const experiences = [
                         description: 'I received the top 2nd place award for my thesis presentation at the 6th Science Paper Competition.',
                         images: [],
                         links: [
-                            { label: 'NCHU', url: 'https://www.nchu.edu.tw/' }
+                            { label: 'Event Page', url: 'https://sites.google.com/email.nchu.edu.tw/scientific-paper-competition/%E6%AD%B7%E5%B1%86%E8%8A%B1%E7%B5%AE-highlights/%E7%AC%AC%E5%85%AD%E5%B1%86-2023' }
                         ]
                     }
                 },
@@ -298,7 +313,7 @@ const experiences = [
                         description: 'I received the top 10 finalist award for my hackathon presentation at the 2023 Agriculture Open Data Hackathon.',
                         images: [],
                         links: [
-                            { label: 'MOA', url: 'https://www.moa.gov.tw/' }
+                            { label: 'Event Page', url: 'https://data.moa.gov.tw/HackathonA/Home.aspx?ID=1' }
                         ]
                     }
                 },
@@ -313,7 +328,7 @@ const experiences = [
                         description: 'I visited Kasetsart University to give a talk on my research.',
                         images: [],
                         links: [
-                            { label: 'Kasetsart University', url: 'https://www.ku.ac.th/' }
+                            { label: 'Kasetsart University', url: 'https://www.ku.ac.th/en/community-home' }
                         ]
                     }
                 },
@@ -410,9 +425,9 @@ const experiences = [
                 },
                 {
                     id: 'nwau-visit',
-                    title: 'Program Participant | Northwest A&F University',
+                    title: 'Visiting Student | Northwest A&F University',
                     year: 'Jun-Jul 2023',
-                    category: 'Visiting Student',
+                    category: 'Visiting Program',
                     type: 'Program',
                     location: 'Yangling, China',
                     details: {
@@ -488,7 +503,7 @@ const ActivityItem = ({ activity, onClick }) => {
                 <div className="flex-1">
                     <div className="flex flex-wrap items-center gap-x-3 gap-y-2 mb-2">
                         <h5 className="font-bold text-gray-800 dark:text-gray-100 text-sm md:text-base group-hover:text-primary dark:group-hover:text-primary-bright transition-colors">
-                            {activity.title}
+                            <ItalicizeShiNyP text={activity.title} />
                         </h5>
                         <div className="flex flex-wrap gap-2">
                             <span className={`text-xs font-bold px-2 py-0.5 rounded border-2 ${getTagStyle(activity.type)}`}>
@@ -585,7 +600,9 @@ const ExperienceCard = ({ item, idx, expandedId, toggleExpand }) => {
                                 {item.type}
                             </span>
                         </div>
-                        <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100 mb-1">{item.role}</h3>
+                        <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100 mb-1">
+                            <ItalicizeShiNyP text={item.role} />
+                        </h3>
                         <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-secondary dark:text-gray-400 font-medium mb-2">
                             <span>{item.institution}</span>
                             <span className="text-gray-500 dark:text-gray-500 text-sm flex items-center gap-1">
@@ -621,12 +638,14 @@ const ExperienceCard = ({ item, idx, expandedId, toggleExpand }) => {
                                     <div>
                                         <h4 className="text-sm font-bold text-gray-900 dark:text-white uppercase tracking-wide mb-3 border-b border-gray-200 dark:border-gray-700 pb-2">Overview</h4>
                                         <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-                                            {item.details.longDescription}
+                                            <ItalicizeShiNyP text={item.details.longDescription} />
                                         </p>
                                         {item.details.achievements.length > 0 && (
                                             <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
                                                 {item.details.achievements.map((achievement, i) => (
-                                                    <li key={i} className="pl-2">{achievement}</li>
+                                                    <li key={i} className="pl-2">
+                                                        <ItalicizeShiNyP text={achievement} />
+                                                    </li>
                                                 ))}
                                             </ul>
                                         )}

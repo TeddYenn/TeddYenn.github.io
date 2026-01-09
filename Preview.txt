@@ -3,5 +3,8 @@ npm run preview
 
 
 git add .
-git commit -m "Update info"
+git commit -m "Update info 20260109"
 git push
+
+https://github.com/TeddYenn/TeddYenn.github.io
+https://teddyenn.github.io/
